@@ -1,0 +1,10 @@
+:root{
+    box-sizing: border-box;
+    font-size: calc(0.875em + 0.30vw);
+}
+
+::before,
+::after,
+* {
+    box-sizing: border-box;
+}
