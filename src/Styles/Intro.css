@@ -1,0 +1,15 @@
+.intro-image {
+    
+    width: 60vw;
+    object-fit: cover;
+    margin:0 auto;
+}
+
+.image-container{
+    background-image: url("https://indac.org/wp-content/uploads/2018/07/xxx-1288x724.jpg");
+    background-repeat: no-repeat;
+    background-size: cover ;
+    height: 350px;
+    width: 100%;
+   
+}

@@ -1,26 +1,46 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import './Styles/App.css';
+import Navbar from './Components/Navbar';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import About from './Components/About';
+import Contact from './Components/Contact';
+import Login from './Components/Login';
+import Test from './Components/Test';
+import Intro from './Components/Intro';
+import Charity from './Components/Charity';
+import {  Route, Switch } from 'react-router-dom';
+import Graph from './Components/Graph';
+import Blog from './Components/Blog';
+import TestimonialsPage from './Components/Testimonials'
+
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+  
+    <Switch>
+      <Route path='/' component={Home} exact/>
+      <Route path='/about' component={About} />
+      <Route path='/blog' component={Blog} />
+      <Route path='/login' component={Login} />
+      {/* <Route component={Error} /> */}
+
+    </Switch>
+ );
 }
+
+function Home(){
+  return (
+    <>
+     <Navbar/>
+     <Intro/>
+     <Test/>  
+
+    
+     
+     </>
+  )
+}
+
 
 export default App;
